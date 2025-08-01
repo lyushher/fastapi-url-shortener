@@ -9,7 +9,7 @@ app = FastAPI()
 def shorten_url(request: URLRequest):
     short_code = generate_short_code()
     save_url(short_code, request.long_url)
-    return {"short_url": f"http://localhost:8001/{short_code}"}
+    return {"short_url": f"http://16.171.2.202:8001/{short_code}"}
 
 @app.get("/{short_code}")
 def redirect_url(short_code: str):
