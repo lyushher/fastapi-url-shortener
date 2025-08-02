@@ -26,6 +26,6 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           
           script: |
-            cd /home/ubuntu/url-shortener/app
+            cd /home/ubuntu/url-shortener
             chmod +x deploy.sh
             ./deploy.sh
