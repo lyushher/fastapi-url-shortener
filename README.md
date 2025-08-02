@@ -45,7 +45,7 @@ This project is built using modern and scalable technologies to ensure high perf
 - **🐘 Database:** [PostgreSQL](https://www.postgresql.org/) – A powerful, production-grade relational database system used for persistent URL storage.
 - **🐳 Containerization:** [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/) – For building, packaging, and running the app in isolated environments, ensuring platform consistency.
 - **⚙️ CI/CD Automation:** [GitHub Actions](https://github.com/features/actions) – Automated build, test, and deployment pipeline triggered on code push to `main`.
-- **☁️ Deployment Target:** [AWS EC2 (Ubuntu 22.04)](https://aws.amazon.com/ec2/) – Cloud infrastructure hosting the application, with port `8000` publicly exposed for API access.
+- **☁️ Deployment Target:** [AWS EC2 (Ubuntu 22.04)](https://aws.amazon.com/ec2/) – Cloud infrastructure hosting the application, with port `8001` publicly exposed for API access.
 - **🔐 Secure Access:** SSH key-based authentication ensures safe and authorized deployments to the cloud server.
 - **📦 Package Management:** `pip` with a clean `requirements.txt` for dependency management.
 
@@ -69,6 +69,8 @@ If deployed in a public environment, consider adding access control or usage lim
 ---
 
 ## 📡 API Endpoints
+
+You can use tools like Swagger UI or Postman to test these endpoints interactively.
 
 | Method | Route         | Description                   |
 |--------|---------------|-------------------------------|
@@ -127,4 +129,5 @@ Even though the service is production-ready, the current version includes the fo
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
 
