@@ -25,7 +25,7 @@ A high-performance, Dockerized URL Shortener API built with <strong>FastAPI</str
 
 ---
 
-## 🌐 Project Overview
+## 🌐 Overview
 
 This is a production-ready **URL Shortener API** designed for performance and scalability.  
 It allows users to:
@@ -160,6 +160,7 @@ Even though the service is production-ready, the current version includes the fo
 ## 📄 License
 
 This project is open-source and available under the terms of the [MIT License](LICENSE).
+
 
 
 
