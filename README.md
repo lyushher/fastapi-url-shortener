@@ -19,7 +19,9 @@ A high-performance, Dockerized URL Shortener API built with <strong>FastAPI</str
 </p>
 <p align="center">
   <img src="https://img.shields.io/github/license/lyushher/fastapi-url-shortener?color=yellow" />
+  <img src="https://img.shields.io/github/v/release/lyushher/fastapi-url-shortener?color=success" alt="GitHub Release" />
 </p>
+
 
 ---
 
@@ -63,7 +65,7 @@ This project is built using modern and scalable technologies to ensure high perf
 
 ## 🔐 Security & Authentication
 
-> ℹ️ Note: This project does not implement authentication or rate limiting.  
+> Note: This project does not implement authentication or rate limiting.  
 If deployed in a public environment, consider adding access control or usage limits to prevent abuse.
 
 ---
@@ -111,7 +113,36 @@ This project follows a fully automated CI/CD process using GitHub Actions:
 4. **Pull Latest Code**: The latest codebase is pulled from the GitHub repository.
 5. **Rebuild Docker Container**: The container is rebuilt to reflect the new changes.
 6. **Restart Application**: The old container is gracefully stopped and replaced with the new version.
+7. **Version Tagging**: Each stable release is tagged (e.g., `v1.0.0`) and pushed to Docker Hub.
 
+---
+
+## 🐳 Docker Image
+
+This project provides a prebuilt Docker image hosted on [Docker Hub](https://hub.docker.com/repository/docker/firdevsakbayir/urlshortener).  
+You can pull and run the image directly without cloning the source code.
+
+### 📥 Pull the Image
+Pull the latest prebuilt image from Docker Hub.
+This eliminates the need to clone or build the project locally.
+```bash
+docker pull firdevsakbayir/urlshortener:latest
+```
+
+### 🚀 Run the Container
+Run the pulled Docker image by mapping port `8001` on your machine to port `80` inside the container.
+After running, you can access the API at [http://localhost:8001/docs](http://localhost:8001/docs).
+```bash
+docker run -d -p 8001:80 firdevsakbayir/urlshortener:latest
+```
+
+### 📎 Notes
+- The image is automatically built and published on Docker Hub.
+- Tag latest refers to the most recent stable release.
+- Versioned tags (e.g., v1.0.0) are now available for stable releases.
+- Suitable for containerized deployments and CI/CD pipelines.
+
+  
 ---
 
 ## ⚠️ Known Limitations
@@ -128,6 +159,8 @@ Even though the service is production-ready, the current version includes the fo
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is open-source and available under the terms of the [MIT License](LICENSE).
+
+
 
 
