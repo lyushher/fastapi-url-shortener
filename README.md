@@ -63,7 +63,7 @@ This project is built using modern and scalable technologies to ensure high perf
 - ✅ Clean, modular architecture for maintainability
 - ✅ One-click deployment to AWS via GitHub Actions
 
-## 🔐 Security & Authentication
+### 🔐 Security & Authentication
 
 > Note: This project does not implement authentication or rate limiting.  
 If deployed in a public environment, consider adding access control or usage limits to prevent abuse.
@@ -160,6 +160,7 @@ Even though the service is production-ready, the current version includes the fo
 ## 📄 License
 
 This project is open-source and available under the terms of the [MIT License](LICENSE).
+
 
 
 
