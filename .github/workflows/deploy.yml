@@ -26,6 +26,5 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           
           script: |
-            cd /home/ubuntu/app
-            chmod +x deploy.sh
-            ./deploy.sh
+            chmod +x /home/ubuntu/deploy.sh
+            /home/ubuntu/deploy.sh
