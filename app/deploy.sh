@@ -1,5 +1,3 @@
-#!/bin/bash
-
 cd /home/ubuntu/app
 
 echo "Pulling latest changes and rebuilding..."
